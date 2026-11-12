@@ -1,0 +1,13 @@
+Data UTC: 2026-11-12T21:29:23.638Z
+Node: v24.20.0
+Comando equivalente: npx jest --runInBand --randomize --seed=2026 --showSeed
+Código de saída: 0
+Esperado: 0
+
+
+Seed:        2026
+Test Suites: 17 passed, 17 total
+Tests:       99 passed, 99 total
+Snapshots:   1 passed, 1 total
+Time:        2.425 s, estimated 3 s
+Ran all test suites.

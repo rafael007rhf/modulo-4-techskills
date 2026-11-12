@@ -1,0 +1,26 @@
+Data UTC: 2026-11-12T21:20:24.769Z
+Node: v24.20.0
+Comando equivalente: npx jest --runInBand contador
+Código de saída: 0
+Esperado: 0
+
+  console.log
+    valor ao final do teste: 1
+
+      at Object.<anonymous> (src/__tests__/contador.spec.ts:5:29)
+
+  console.log
+    valor ao final do teste: 3
+
+      at Object.<anonymous> (src/__tests__/contador.spec.ts:5:29)
+
+  console.log
+    valor ao final do teste: 0
+
+      at Object.<anonymous> (src/__tests__/contador.spec.ts:5:29)
+
+Test Suites: 1 passed, 1 total
+Tests:       3 passed, 3 total
+Snapshots:   0 total
+Time:        1.487 s
+Ran all test suites matching contador.

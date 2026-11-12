@@ -1,0 +1,11 @@
+Data UTC: 2026-11-12T21:18:17.327Z
+Node: v24.20.0
+Comando equivalente: npx jest --runInBand usuarioService
+Código de saída: 0
+Esperado: 0
+
+Test Suites: 1 passed, 1 total
+Tests:       3 passed, 3 total
+Snapshots:   0 total
+Time:        1.383 s
+Ran all test suites matching usuarioService.

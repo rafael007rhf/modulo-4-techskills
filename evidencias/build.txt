@@ -1,0 +1,6 @@
+Data UTC: 2026-11-12T21:24:01.446Z
+Node: v24.20.0
+Comando equivalente: npx tsc -p tsconfig.build.json
+Código de saída: 0
+Esperado: 0
+

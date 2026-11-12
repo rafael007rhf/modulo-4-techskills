@@ -1,0 +1,10 @@
+Conferência em 2026-11-12T21:33:25.856Z
+17 suítes, 99 testes, 1 snapshot aprovado. Sem testes pendentes.
+17 documentos individuais encontrados.
+Asserções exigidas em runtime por expect.hasAssertions em cada teste.
+inicial: índice HTML e 8 relatórios de fonte conferidos; statements=97.22%, branches=93.75%
+apos-08: índice HTML e 8 relatórios de fonte conferidos; statements=100%, branches=100%
+final: índice HTML e 15 relatórios de fonte conferidos; statements=100%, branches=100%
+Linha inicial não coberta confirmada: calcularFrete.ts:6.
+Mutações temporárias de sum e buscarDados revertidas.
+Mensagem final e snapshot com alteração deliberada aprovada.

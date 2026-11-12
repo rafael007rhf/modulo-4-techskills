@@ -1,0 +1,11 @@
+Data UTC: 2026-11-12T21:23:23.997Z
+Node: v24.20.0
+Comando equivalente: npx jest --runInBand emailService
+Código de saída: 0
+Esperado: 0
+
+Test Suites: 1 passed, 1 total
+Tests:       5 passed, 5 total
+Snapshots:   0 total
+Time:        1.433 s
+Ran all test suites matching emailService.

@@ -1,0 +1,27 @@
+Data UTC: 2026-11-12T21:23:01.219Z
+Node: v24.20.0
+Comando equivalente: npx jest --config jest.demo.config.js --runInBand --runTestsByPath demonstracoes/promise-atrasada.demo.ts
+Código de saída: 1
+Esperado: 1
+
+FAIL demonstracoes/promise-atrasada.demo.ts
+  ● detecta a ausência de asserção quando a promessa não é aguardada
+
+    expect.assertions(1)
+
+    Expected one assertion to be called but received zero assertion calls.
+
+      1 | it('detecta a ausência de asserção quando a promessa não é aguardada', () => {
+    > 2 |   expect.assertions(1);
+        |          ^
+      3 |   const promessa = new Promise<{ ok: boolean }>((resolve) => {
+      4 |     setTimeout(() => resolve({ ok: true }), 30);
+      5 |   });
+
+      at Object.<anonymous> (demonstracoes/promise-atrasada.demo.ts:2:10)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 total
+Snapshots:   0 total
+Time:        1.4 s
+Ran all test suites within paths "demonstracoes/promise-atrasada.demo.ts".

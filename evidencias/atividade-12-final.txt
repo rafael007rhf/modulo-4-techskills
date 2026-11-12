@@ -1,0 +1,11 @@
+Data UTC: 2026-11-12T21:23:19.814Z
+Node: v24.20.0
+Comando equivalente: npx jest --runInBand criarUsuario
+Código de saída: 0
+Esperado: 0
+
+Test Suites: 1 passed, 1 total
+Tests:       6 passed, 6 total
+Snapshots:   0 total
+Time:        1.386 s, estimated 2 s
+Ran all test suites matching criarUsuario.

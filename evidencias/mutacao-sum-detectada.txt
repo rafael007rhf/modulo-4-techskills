@@ -1,0 +1,29 @@
+Data UTC: 2026-11-12T21:23:15.084Z
+Node: v24.20.0
+Comando equivalente: npx jest --runInBand --runTestsByPath src/__tests__/sum.spec.ts
+Código de saída: 1
+Esperado: 1
+
+FAIL src/__tests__/sum.spec.ts
+  ● sum › deve retornar 5 quando somar 2 e 3
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 5
+    Received: -1
+
+       9 |     const resultado = sum(a, b);
+      10 |     // Assert
+    > 11 |     expect(resultado).toBe(5);
+         |                       ^
+      12 |   });
+      13 | });
+      14 |
+
+      at Object.<anonymous> (src/__tests__/sum.spec.ts:11:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 total
+Snapshots:   0 total
+Time:        1.423 s
+Ran all test suites within paths "src/__tests__/sum.spec.ts".

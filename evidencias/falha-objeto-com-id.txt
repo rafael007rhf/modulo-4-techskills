@@ -1,0 +1,35 @@
+Data UTC: 2026-11-12T21:22:53.287Z
+Node: v24.20.0
+Comando equivalente: npx jest --config jest.demo.config.js --runInBand --runTestsByPath demonstracoes/objeto.demo.ts
+Código de saída: 1
+Esperado: 1
+
+FAIL demonstracoes/objeto.demo.ts
+  ● demonstra a comparação completa anterior à adição do ID
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 0
+    + Received  + 1
+
+      Object {
+    +   "id": "268f0ccc-751e-48fb-8027-38800106f59b",
+        "idade": 30,
+        "nome": "Maria",
+      }
+
+      3 | it('demonstra a comparação completa anterior à adição do ID', () => {
+      4 |   const resultado = criarUsuario('Maria', 30);
+    > 5 |   expect(resultado).toEqual({ nome: 'Maria', idade: 30 });
+        |                     ^
+      6 | });
+      7 | it('mantém a comparação parcial após a adição do ID', () => {
+      8 |   const resultado = criarUsuario('Maria', 30);
+
+      at Object.<anonymous> (demonstracoes/objeto.demo.ts:5:21)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        1.424 s
+Ran all test suites within paths "demonstracoes/objeto.demo.ts".

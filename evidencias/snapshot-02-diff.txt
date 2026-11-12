@@ -1,0 +1,35 @@
+Data UTC: 2026-11-12T21:23:09.339Z
+Node: v24.20.0
+Comando equivalente: npx jest --runInBand mensagem --ci
+Código de saída: 1
+Esperado: 1
+
+FAIL src/__tests__/mensagem.spec.ts
+  ● getMensagemBoasVindas › deve gerar a mensagem quando receber Maria
+
+    expect(received).toMatchSnapshot()
+
+    Snapshot name: `getMensagemBoasVindas deve gerar a mensagem quando receber Maria 1`
+
+    Snapshot: "Olá, Maria! Bem-vindo à nossa plataforma."
+    Received: "Olá, Maria! Seja bem-vindo à nossa plataforma."
+
+       8 |     const mensagem = getMensagemBoasVindas(nome);
+       9 |     // Assert
+    > 10 |     expect(mensagem).toMatchSnapshot();
+         |                      ^
+      11 |   });
+      12 | });
+      13 |
+
+      at Object.<anonymous> (src/__tests__/mensagem.spec.ts:10:22)
+
+ › 1 snapshot failed.
+Snapshot Summary
+ › 1 snapshot failed from 1 test suite. Inspect your code changes or re-run jest with `-u` to update them.
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 total
+Snapshots:   1 failed, 1 total
+Time:        1.443 s, estimated 2 s
+Ran all test suites matching mensagem.

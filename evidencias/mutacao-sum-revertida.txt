@@ -1,0 +1,11 @@
+Data UTC: 2026-11-12T21:23:17.122Z
+Node: v24.20.0
+Comando equivalente: npx jest --runInBand --runTestsByPath src/__tests__/sum.spec.ts
+Código de saída: 0
+Esperado: 0
+
+Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+Snapshots:   0 total
+Time:        1.366 s, estimated 2 s
+Ran all test suites within paths "src/__tests__/sum.spec.ts".

@@ -1,0 +1,28 @@
+{
+  "name": "modulo-4-techskills",
+  "version": "1.0.0",
+  "private": true,
+  "description": "17 atividades de testes automatizados com Jest e TypeScript",
+  "scripts": {
+    "test": "jest --runInBand",
+    "test:coverage": "jest --coverage --runInBand",
+    "test:verbose": "jest --verbose --runInBand",
+    "test:random": "jest --runInBand --randomize --showSeed --seed=1713",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc -p tsconfig.build.json",
+    "start": "node dist/server.js",
+    "demo": "node scripts/demonstrar.cjs"
+  },
+  "engines": { "node": ">=22" },
+  "dependencies": { "express": "5.3.0" },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.0.0",
+    "@types/supertest": "^6.0.0",
+    "jest": "30.5.2",
+    "supertest": "7.3.2",
+    "ts-jest": "29.4.15",
+    "typescript": "5.9.3"
+  }
+}

@@ -1,0 +1,11 @@
+Data UTC: 2026-11-12T21:23:13.252Z
+Node: v24.20.0
+Comando equivalente: npx jest --runInBand mensagem --ci
+Código de saída: 0
+Esperado: 0
+
+Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+Snapshots:   1 passed, 1 total
+Time:        1.206 s, estimated 2 s
+Ran all test suites matching mensagem.

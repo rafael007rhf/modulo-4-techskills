@@ -1,0 +1,277 @@
+
+> modulo-4-techskills@1.0.0 test:verbose
+> jest --verbose --runInBand --reporters=default --reporters=./scripts/relatorio-detalhado.cjs
+
+PASS src/__tests__/ping.spec.ts
+  GET /ping
+    √ deve retornar status 200 e corpo ok quando consultar a saúde da API (26 ms)
+    √ deve retornar JSON quando consultar a saúde da API (4 ms)
+    √ deve retornar 404 quando a rota não existir (2 ms)
+    √ deve retornar 404 quando o método POST não estiver registrado em ping (3 ms)
+
+[passed] GET /ping deve retornar status 200 e corpo ok quando consultar a saúde da API
+[passed] GET /ping deve retornar JSON quando consultar a saúde da API
+[passed] GET /ping deve retornar 404 quando a rota não existir
+[passed] GET /ping deve retornar 404 quando o método POST não estiver registrado em ping
+PASS src/__tests__/api.spec.ts
+  GET /saudacao/:nome
+    √ deve retornar "Olá, Maria" quando o nome for "Maria" (26 ms)
+    √ deve retornar "Olá, Ana Paula" quando o nome for "Ana Paula" (4 ms)
+  POST /soma
+    √ deve retornar 5 quando somar 2 e 3 (16 ms)
+    √ deve retornar -3 quando somar -5 e 2 (2 ms)
+    √ deve retornar 0 quando somar 0 e 0 (3 ms)
+    √ deve retornar 0.30000000000000004 quando somar 0.1 e 0.2 (2 ms)
+    √ deve retornar 400 quando receber b ausente (2 ms)
+    √ deve retornar 400 quando receber a inválido (2 ms)
+    √ deve retornar 400 quando receber a ausente (2 ms)
+    √ deve retornar 400 quando receber b inválido (2 ms)
+    √ deve retornar 400 quando receber a nulo (2 ms)
+    √ deve retornar 400 quando receber a booleano (2 ms)
+    √ deve retornar 400 quando receber corpo vazio (2 ms)
+    √ deve retornar 400 quando não receber um corpo JSON (2 ms)
+    √ deve retornar 400 quando um número JSON exceder o limite finito: {"a":1e400,"b":3} (2 ms)
+    √ deve retornar 400 quando um número JSON exceder o limite finito: {"a":2,"b":1e400} (3 ms)
+  Rota inexistente
+    √ deve retornar 404 quando consultar uma rota não registrada (4 ms)
+
+[passed] GET /saudacao/:nome deve retornar "Olá, Maria" quando o nome for "Maria"
+[passed] GET /saudacao/:nome deve retornar "Olá, Ana Paula" quando o nome for "Ana Paula"
+[passed] POST /soma deve retornar 5 quando somar 2 e 3
+[passed] POST /soma deve retornar -3 quando somar -5 e 2
+[passed] POST /soma deve retornar 0 quando somar 0 e 0
+[passed] POST /soma deve retornar 0.30000000000000004 quando somar 0.1 e 0.2
+[passed] POST /soma deve retornar 400 quando receber b ausente
+[passed] POST /soma deve retornar 400 quando receber a inválido
+[passed] POST /soma deve retornar 400 quando receber a ausente
+[passed] POST /soma deve retornar 400 quando receber b inválido
+[passed] POST /soma deve retornar 400 quando receber a nulo
+[passed] POST /soma deve retornar 400 quando receber a booleano
+[passed] POST /soma deve retornar 400 quando receber corpo vazio
+[passed] POST /soma deve retornar 400 quando não receber um corpo JSON
+[passed] POST /soma deve retornar 400 quando um número JSON exceder o limite finito: {"a":1e400,"b":3}
+[passed] POST /soma deve retornar 400 quando um número JSON exceder o limite finito: {"a":2,"b":1e400}
+[passed] Rota inexistente deve retornar 404 quando consultar uma rota não registrada
+PASS src/__tests__/divide.spec.ts
+  divide
+    √ deve retornar 5 quando dividir 10 por 2 (1 ms)
+    √ deve retornar -5 quando dividir -10 por 2
+    √ deve retornar 0 quando dividir 0 por 5
+    √ deve retornar 3.5 quando dividir 7 por 2
+    √ deve lançar um erro quando o divisor for zero (15 ms)
+    √ deve informar a mensagem quando o divisor for zero (1 ms)
+    √ deve corresponder à expressão quando a mensagem mencionar zero (1 ms)
+    √ deve lançar Error quando o divisor for zero
+    √ deve executar sem erro quando dividir 10 por 5 (1 ms)
+
+[passed] divide deve retornar 5 quando dividir 10 por 2
+[passed] divide deve retornar -5 quando dividir -10 por 2
+[passed] divide deve retornar 0 quando dividir 0 por 5
+[passed] divide deve retornar 3.5 quando dividir 7 por 2
+[passed] divide deve lançar um erro quando o divisor for zero
+[passed] divide deve informar a mensagem quando o divisor for zero
+[passed] divide deve corresponder à expressão quando a mensagem mencionar zero
+[passed] divide deve lançar Error quando o divisor for zero
+[passed] divide deve executar sem erro quando dividir 10 por 5
+PASS src/__tests__/calcularFrete.spec.ts
+  calcularFrete
+    √ deve rejeitar o peso quando receber 0 (6 ms)
+    √ deve rejeitar o peso quando receber -1
+    √ deve rejeitar o peso quando receber NaN
+    √ deve rejeitar o peso quando receber Infinity
+    √ deve retornar R$ 10 quando o peso for 0.5 kg
+    √ deve retornar R$ 10 quando o peso for 1 kg
+    √ deve retornar R$ 12 quando o peso for 2 kg
+    √ deve retornar R$ 11 quando o peso for 1.5 kg
+    √ deve retornar R$ 18 quando o peso for 5 kg
+    √ deve retornar R$ 25 quando o peso for 5.01 kg
+    √ deve acrescentar R$ 5 quando o CEP começar com 9 (1 ms)
+    √ deve lançar erro quando o CEP for "123"
+    √ deve lançar erro quando o CEP for ""
+    √ deve lançar erro quando o CEP for "abcdefgh"
+    √ deve lançar erro quando o CEP for null
+    √ deve lançar erro quando o CEP for undefined (1 ms)
+[passed] calcularFrete deve rejeitar o peso quando receber 0
+
+[passed] calcularFrete deve rejeitar o peso quando receber -1
+[passed] calcularFrete deve rejeitar o peso quando receber NaN
+[passed] calcularFrete deve rejeitar o peso quando receber Infinity
+[passed] calcularFrete deve retornar R$ 10 quando o peso for 0.5 kg
+[passed] calcularFrete deve retornar R$ 10 quando o peso for 1 kg
+[passed] calcularFrete deve retornar R$ 12 quando o peso for 2 kg
+[passed] calcularFrete deve retornar R$ 11 quando o peso for 1.5 kg
+[passed] calcularFrete deve retornar R$ 18 quando o peso for 5 kg
+[passed] calcularFrete deve retornar R$ 25 quando o peso for 5.01 kg
+[passed] calcularFrete deve acrescentar R$ 5 quando o CEP começar com 9
+[passed] calcularFrete deve lançar erro quando o CEP for "123"
+[passed] calcularFrete deve lançar erro quando o CEP for ""
+[passed] calcularFrete deve lançar erro quando o CEP for "abcdefgh"
+[passed] calcularFrete deve lançar erro quando o CEP for null
+[passed] calcularFrete deve lançar erro quando o CEP for undefined
+PASS src/__tests__/filtrarPares.spec.ts
+[passed] filtrarPares deve retornar [2, 4, 6] quando filtrar [1, 2, 3, 4, 5, 6]
+[passed] filtrarPares deve retornar [] quando filtrar [1, 3, 5]
+[passed] filtrarPares deve retornar [] quando filtrar []
+[passed] filtrarPares deve retornar [-4, 0] quando filtrar [-4, -3, 0, 7]
+[passed] filtrarPares deve conter 12 quando filtrar 10, 11 e 12
+[passed] filtrarPares deve manter quatro elementos quando todos forem pares
+[passed] filtrarPares deve excluir 2 quando só houver ímpares
+[passed] filtrarPares deve criar outro array quando filtrar sem modificar a entrada
+  filtrarPares
+    √ deve retornar [2, 4, 6] quando filtrar [1, 2, 3, 4, 5, 6] (1 ms)
+    √ deve retornar [] quando filtrar [1, 3, 5]
+    √ deve retornar [] quando filtrar []
+    √ deve retornar [-4, 0] quando filtrar [-4, -3, 0, 7] (1 ms)
+    √ deve conter 12 quando filtrar 10, 11 e 12
+    √ deve manter quatro elementos quando todos forem pares
+    √ deve excluir 2 quando só houver ímpares (1 ms)
+    √ deve criar outro array quando filtrar sem modificar a entrada
+
+PASS src/__tests__/montarOperacao.spec.ts
+[passed] montarOperacao deve informar a operação quando montar uma subtração
+[passed] montarOperacao deve retornar o objeto completo quando receber dois números
+[passed] montarOperacao deve fornecer um resultado truthy quando a diferença não for zero
+  montarOperacao
+[passed] montarOperacao deve indicar ausência quando buscar um valor fora da operação
+[passed] montarOperacao deve conter o primeiro operando quando montar os valores
+    √ deve informar a operação quando montar uma subtração (11 ms)
+    √ deve retornar o objeto completo quando receber dois números (1 ms)
+    √ deve fornecer um resultado truthy quando a diferença não for zero
+    √ deve indicar ausência quando buscar um valor fora da operação (1 ms)
+    √ deve conter o primeiro operando quando montar os valores
+
+  console.log
+    valor ao final do teste: 1
+
+      at Object.<anonymous> (src/__tests__/contador.spec.ts:5:29)
+
+  console.log
+    valor ao final do teste: 3
+
+      at Object.<anonymous> (src/__tests__/contador.spec.ts:5:29)
+
+  console.log
+    valor ao final do teste: 0
+
+      at Object.<anonymous> (src/__tests__/contador.spec.ts:5:29)
+
+PASS src/__tests__/contador.spec.ts
+[passed] contador deve retornar 1 quando incrementar uma vez
+  contador
+    √ deve retornar 1 quando incrementar uma vez (13 ms)
+    √ deve retornar 3 quando incrementar três vezes (1 ms)
+    √ deve começar em zero quando iniciar outro teste (1 ms)
+
+[passed] contador deve retornar 3 quando incrementar três vezes
+[passed] contador deve começar em zero quando iniciar outro teste
+PASS src/__tests__/calculo.spec.ts
+[passed] soma deve retornar 5 quando somar 2 e 3
+  soma
+    √ deve retornar 5 quando somar 2 e 3 (1 ms)
+    √ deve retornar 0 quando somar -1 e 1 (1 ms)
+    √ deve retornar 0 quando somar 0 e 0
+  subtrai
+    √ deve retornar 3 quando subtrair 5 e 2
+
+[passed] soma deve retornar 0 quando somar -1 e 1
+[passed] soma deve retornar 0 quando somar 0 e 0
+[passed] subtrai deve retornar 3 quando subtrair 5 e 2
+PASS src/__tests__/emailService.spec.ts
+[passed] criarEnviarEmail deve retornar sucesso quando enviar o e-mail de boas-vindas
+  criarEnviarEmail
+    √ deve retornar sucesso quando enviar o e-mail de boas-vindas (2 ms)
+    √ deve chamar uma vez quando enviar para um usuário
+    √ deve usar cada endereço quando enviar para dois usuários (1 ms)
+    √ deve resolver sucesso quando a API de envio for assíncrona
+    √ deve propagar o mesmo erro quando o envio falhar (1 ms)
+
+[passed] criarEnviarEmail deve chamar uma vez quando enviar para um usuário
+[passed] criarEnviarEmail deve usar cada endereço quando enviar para dois usuários
+[passed] criarEnviarEmail deve resolver sucesso quando a API de envio for assíncrona
+[passed] criarEnviarEmail deve propagar o mesmo erro quando o envio falhar
+PASS src/__tests__/asyncAwait.spec.ts
+[passed] buscarDados com async/await deve retornar ok verdadeiro quando aguardar os dados
+  buscarDados com async/await
+    √ deve retornar ok verdadeiro quando aguardar os dados (1 ms)
+  buscarDadosComErro
+    √ deve rejeitar com a mensagem quando a busca falhar (4 ms)
+    √ deve rejeitar com Error quando a busca falhar
+    √ deve capturar Error quando aguardar a rejeição em try/catch
+
+[passed] buscarDadosComErro deve rejeitar com a mensagem quando a busca falhar
+[passed] buscarDadosComErro deve rejeitar com Error quando a busca falhar
+[passed] buscarDadosComErro deve capturar Error quando aguardar a rejeição em try/catch
+PASS src/__tests__/criarUsuario.spec.ts
+[passed] criarUsuario deve gerar IDs distintos quando criar dois usuários
+  criarUsuario
+    √ deve gerar IDs distintos quando criar dois usuários (1 ms)
+    √ deve retornar o objeto completo quando receber nome e idade
+    √ deve possuir nome quando criar o usuário (1 ms)
+    √ deve preservar idade 30 quando receber esse valor
+    √ deve conter os campos solicitados quando comparar parcialmente (1 ms)
+    √ deve possuir nome truthy quando receber Maria
+
+[passed] criarUsuario deve retornar o objeto completo quando receber nome e idade
+[passed] criarUsuario deve possuir nome quando criar o usuário
+[passed] criarUsuario deve preservar idade 30 quando receber esse valor
+[passed] criarUsuario deve conter os campos solicitados quando comparar parcialmente
+[passed] criarUsuario deve possuir nome truthy quando receber Maria
+PASS src/__tests__/subtract.spec.ts
+[passed] subtract deve retornar 6 quando subtrair dois positivos
+  subtract
+    √ deve retornar 6 quando subtrair dois positivos (1 ms)
+    √ deve retornar -5 quando o subtraendo for maior
+    √ deve retornar 7 quando subtrair zero
+    √ deve retornar -3 quando subtrair dois negativos (1 ms)
+    √ deve retornar 3 quando subtrair decimais
+
+[passed] subtract deve retornar -5 quando o subtraendo for maior
+[passed] subtract deve retornar 7 quando subtrair zero
+[passed] subtract deve retornar -3 quando subtrair dois negativos
+[passed] subtract deve retornar 3 quando subtrair decimais
+PASS src/__tests__/formatador.spec.ts
+[passed] formatarNome deve retornar "Maria" quando o nome recebido for "maria"
+  formatarNome
+    √ deve retornar "Maria" quando o nome recebido for "maria" (1 ms)
+    √ deve retornar "João" quando o nome recebido for " joão "
+    √ deve retornar "Ana" quando o nome recebido for "ANA" (1 ms)
+    √ deve retornar "" quando o nome recebido for ""
+
+[passed] formatarNome deve retornar "João" quando o nome recebido for " joão "
+[passed] formatarNome deve retornar "Ana" quando o nome recebido for "ANA"
+[passed] formatarNome deve retornar "" quando o nome recebido for ""
+PASS src/__tests__/usuarioService.spec.ts
+[passed] criarUsuarioService deve retornar o usuário quando o repositório encontrar o ID
+  criarUsuarioService
+    √ deve retornar o usuário quando o repositório encontrar o ID (1 ms)
+    √ deve retornar null quando o usuário não existir
+    √ deve aguardar o usuário quando o repositório for assíncrono
+
+[passed] criarUsuarioService deve retornar null quando o usuário não existir
+[passed] criarUsuarioService deve aguardar o usuário quando o repositório for assíncrono
+PASS src/__tests__/promises.spec.ts
+  buscarDados com resolves
+    √ deve resolver com o objeto completo quando buscar os dados (1 ms)
+    √ deve possuir ok quando a promessa resolver
+    √ deve conter ok verdadeiro quando a promessa resolver
+    √ deve devolver Promise quando buscar os dados
+
+[passed] buscarDados com resolves deve resolver com o objeto completo quando buscar os dados
+[passed] buscarDados com resolves deve possuir ok quando a promessa resolver
+[passed] buscarDados com resolves deve conter ok verdadeiro quando a promessa resolver
+[passed] buscarDados com resolves deve devolver Promise quando buscar os dados
+PASS src/__tests__/mensagem.spec.ts
+[passed] getMensagemBoasVindas deve gerar a mensagem quando receber Maria
+  getMensagemBoasVindas
+    √ deve gerar a mensagem quando receber Maria (1 ms)
+
+PASS src/__tests__/sum.spec.ts
+[passed] sum deve retornar 5 quando somar 2 e 3
+  sum
+    √ deve retornar 5 quando somar 2 e 3
+
+Test Suites: 17 passed, 17 total
+Tests:       99 passed, 99 total
+Snapshots:   1 passed, 1 total
+Time:        2.525 s, estimated 3 s
+Ran all test suites.

@@ -1,0 +1,31 @@
+
+> modulo-4-techskills@1.0.0 test
+> jest --runInBand --coverage --coverageDirectory=evidencias/cobertura-final --json --outputFile=evidencias/resultados-finais.json
+
+-------------------|---------|----------|---------|---------|-------------------
+File               | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+-------------------|---------|----------|---------|---------|-------------------
+All files          |     100 |      100 |     100 |     100 |                   
+ app.ts            |     100 |      100 |     100 |     100 |                   
+ buscarDados.ts    |     100 |      100 |     100 |     100 |                   
+ calcularFrete.ts  |     100 |      100 |     100 |     100 |                   
+ calculo.ts        |     100 |      100 |     100 |     100 |                   
+ contador.ts       |     100 |      100 |     100 |     100 |                   
+ criarUsuario.ts   |     100 |      100 |     100 |     100 |                   
+ divide.ts         |     100 |      100 |     100 |     100 |                   
+ emailService.ts   |     100 |      100 |     100 |     100 |                   
+ filtrarPares.ts   |     100 |      100 |     100 |     100 |                   
+ formatador.ts     |     100 |      100 |     100 |     100 |                   
+ mensagem.ts       |     100 |      100 |     100 |     100 |                   
+ montarOperacao.ts |     100 |      100 |     100 |     100 |                   
+ subtract.ts       |     100 |      100 |     100 |     100 |                   
+ sum.ts            |     100 |      100 |     100 |     100 |                   
+ usuarioService.ts |     100 |      100 |     100 |     100 |                   
+-------------------|---------|----------|---------|---------|-------------------
+
+Test Suites: 17 passed, 17 total
+Tests:       99 passed, 99 total
+Snapshots:   1 passed, 1 total
+Time:        2.702 s, estimated 3 s
+Ran all test suites.
+Test results written to: evidencias\resultados-finais.json

@@ -1,0 +1,52 @@
+Data UTC: 2026-11-12T21:22:57.385Z
+Node: v24.20.0
+Comando equivalente: npx jest --config jest.demo.config.js --runInBand --runTestsByPath demonstracoes/promise-sem-await.demo.ts
+Código de saída: 1
+Esperado: 1
+
+C:\Users\rafah\Documents\Codex\2026-11-12\https-github-com-rafael007rhf-modulo-4\outputs\modulo-4-techskills\node_modules\expect\build\index.js:2140
+  const innerErr = new JestAssertionError();
+                   ^
+
+JestAssertionError: expect(received).resolves.toEqual(expected) // deep equality
+
+- Expected  - 1
++ Received  + 1
+
+  Object {
+-   "ok": true,
++   "ok": false,
+  }
+    at Object.toEqual (C:\Users\rafah\Documents\Codex\2026-11-12\https-github-com-rafael007rhf-modulo-4\outputs\modulo-4-techskills\node_modules\expect\build\index.js:2140:20)
+    at Object.<anonymous> (C:\Users\rafah\Documents\Codex\2026-11-12\https-github-com-rafael007rhf-modulo-4\outputs\modulo-4-techskills\demonstracoes\promise-sem-await.demo.ts:4:34)
+    at Promise.finally.completed (C:\Users\rafah\Documents\Codex\2026-11-12\https-github-com-rafael007rhf-modulo-4\outputs\modulo-4-techskills\node_modules\jest-circus\build\jestAdapterInit.js:1834:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (C:\Users\rafah\Documents\Codex\2026-11-12\https-github-com-rafael007rhf-modulo-4\outputs\modulo-4-techskills\node_modules\jest-circus\build\jestAdapterInit.js:1774:10)
+    at _callCircusTest (C:\Users\rafah\Documents\Codex\2026-11-12\https-github-com-rafael007rhf-modulo-4\outputs\modulo-4-techskills\node_modules\jest-circus\build\jestAdapterInit.js:1167:40)
+    at _runTestInContext (C:\Users\rafah\Documents\Codex\2026-11-12\https-github-com-rafael007rhf-modulo-4\outputs\modulo-4-techskills\node_modules\jest-circus\build\jestAdapterInit.js:1103:3)
+    at runTestWithContext (C:\Users\rafah\Documents\Codex\2026-11-12\https-github-com-rafael007rhf-modulo-4\outputs\modulo-4-techskills\node_modules\jest-circus\build\jestAdapterInit.js:996:5)
+    at _runTestsForDescribeBlockOnce (C:\Users\rafah\Documents\Codex\2026-11-12\https-github-com-rafael007rhf-modulo-4\outputs\modulo-4-techskills\node_modules\jest-circus\build\jestAdapterInit.js:1008:11)
+    at _runTestsForDescribeBlock (C:\Users\rafah\Documents\Codex\2026-11-12\https-github-com-rafael007rhf-modulo-4\outputs\modulo-4-techskills\node_modules\jest-circus\build\jestAdapterInit.js:824:5)
+    at run (C:\Users\rafah\Documents\Codex\2026-11-12\https-github-com-rafael007rhf-modulo-4\outputs\modulo-4-techskills\node_modules\jest-circus\build\jestAdapterInit.js:789:3)
+    at runAndTransformResultsToJestFormat (C:\Users\rafah\Documents\Codex\2026-11-12\https-github-com-rafael007rhf-modulo-4\outputs\modulo-4-techskills\node_modules\jest-circus\build\jestAdapterInit.js:2300:21)
+    at jestAdapter (C:\Users\rafah\Documents\Codex\2026-11-12\https-github-com-rafael007rhf-modulo-4\outputs\modulo-4-techskills\node_modules\jest-circus\build\runner.js:111:19)
+    at runTestInternal (C:\Users\rafah\Documents\Codex\2026-11-12\https-github-com-rafael007rhf-modulo-4\outputs\modulo-4-techskills\node_modules\jest-runner\build\index.js:247:16)
+    at runTest (C:\Users\rafah\Documents\Codex\2026-11-12\https-github-com-rafael007rhf-modulo-4\outputs\modulo-4-techskills\node_modules\jest-runner\build\index.js:315:7) {
+  matcherResult: {
+    actual: { ok: false },
+    expected: { ok: true },
+    message: 'expect(received).resolves.toEqual(expected) // deep equality\n' +
+      '\n' +
+      '- Expected  - 1\n' +
+      '+ Received  + 1\n' +
+      '\n' +
+      '  Object {\n' +
+      '-   "ok": true,\n' +
+      '+   "ok": false,\n' +
+      '  }',
+    name: 'toEqual',
+    pass: false
+  }
+}
+
+Node.js v24.20.0

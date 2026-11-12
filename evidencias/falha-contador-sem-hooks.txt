@@ -1,0 +1,29 @@
+Data UTC: 2026-11-12T21:22:55.305Z
+Node: v24.20.0
+Comando equivalente: npx jest --config jest.demo.config.js --runInBand --runTestsByPath demonstracoes/contador-sem-hooks.demo.ts
+Código de saída: 1
+Esperado: 1
+
+FAIL demonstracoes/contador-sem-hooks.demo.ts
+  ● Contador sem beforeEach › deve retornar 1 após um incremento novamente
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 2
+
+       6 |   });
+       7 |   it('deve retornar 1 após um incremento novamente', () => {
+    >  8 |     expect(incrementar()).toBe(1);
+         |                           ^
+       9 |   });
+      10 | });
+      11 |
+
+      at Object.<anonymous> (demonstracoes/contador-sem-hooks.demo.ts:8:27)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        1.433 s
+Ran all test suites within paths "demonstracoes/contador-sem-hooks.demo.ts".

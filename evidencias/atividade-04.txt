@@ -1,0 +1,11 @@
+Data UTC: 2026-11-12T21:18:10.611Z
+Node: v24.20.0
+Comando equivalente: npx jest --runInBand divide
+Código de saída: 0
+Esperado: 0
+
+Test Suites: 1 passed, 1 total
+Tests:       9 passed, 9 total
+Snapshots:   0 total
+Time:        1.395 s
+Ran all test suites matching divide.

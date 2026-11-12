@@ -1,0 +1,14 @@
+Data UTC: 2026-11-12T21:23:11.419Z
+Node: v24.20.0
+Comando equivalente: npx jest --runInBand mensagem -u
+Código de saída: 0
+Esperado: 0
+
+Snapshot Summary
+ › 1 snapshot updated from 1 test suite.
+
+Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+Snapshots:   1 updated, 1 total
+Time:        1.212 s, estimated 2 s
+Ran all test suites matching mensagem.

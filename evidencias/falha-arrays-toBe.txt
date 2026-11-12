@@ -1,0 +1,30 @@
+Data UTC: 2026-11-12T21:22:51.253Z
+Node: v24.20.0
+Comando equivalente: npx jest --config jest.demo.config.js --runInBand --runTestsByPath demonstracoes/arrays.demo.ts
+Código de saída: 1
+Esperado: 1
+
+FAIL demonstracoes/arrays.demo.ts
+  ● demonstra a falha de toBe quando comparar arrays distintos
+
+    expect(received).toBe(expected) // Object.is equality
+
+    If it should pass with deep equality, replace "toBe" with "toStrictEqual"
+
+    Expected: [2, 4]
+    Received: serializes to the same string
+
+       7 |   const resultado = filtrarPares(entrada);
+       8 |   // Assert: propositalmente errado; isolado da suíte final.
+    >  9 |   expect(resultado).toBe([2, 4]);
+         |                     ^
+      10 | });
+      11 |
+
+      at Object.<anonymous> (demonstracoes/arrays.demo.ts:9:21)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 total
+Snapshots:   0 total
+Time:        1.408 s
+Ran all test suites within paths "demonstracoes/arrays.demo.ts".

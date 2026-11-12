@@ -1,0 +1,9 @@
+diff --git a/evidencias/snapshot-original.snap.txt b/evidencias/snapshot-atualizado.snap.txt
+index 3659fda..a024f5a 100644
+--- a/evidencias/snapshot-original.snap.txt
++++ b/evidencias/snapshot-atualizado.snap.txt
+@@ -1,3 +1,3 @@
+ // Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+ 
+-exports[`getMensagemBoasVindas deve gerar a mensagem quando receber Maria 1`] = `"Olá, Maria! Bem-vindo à nossa plataforma."`;
++exports[`getMensagemBoasVindas deve gerar a mensagem quando receber Maria 1`] = `"Olá, Maria! Seja bem-vindo à nossa plataforma."`;

@@ -1,0 +1,23 @@
+
+> modulo-4-techskills@1.0.0 test
+> jest --runInBand --coverage --coverageDirectory=evidencias/cobertura-inicial
+
+-------------------|---------|----------|---------|---------|-------------------
+File               | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+-------------------|---------|----------|---------|---------|-------------------
+All files          |   97.22 |    93.75 |     100 |   97.22 |                   
+ app.ts            |     100 |      100 |     100 |     100 |                   
+ calcularFrete.ts  |    90.9 |    92.85 |     100 |    90.9 | 6                 
+ divide.ts         |     100 |      100 |     100 |     100 |                   
+ formatador.ts     |     100 |      100 |     100 |     100 |                   
+ montarOperacao.ts |     100 |      100 |     100 |     100 |                   
+ subtract.ts       |     100 |      100 |     100 |     100 |                   
+ sum.ts            |     100 |      100 |     100 |     100 |                   
+ usuarioService.ts |     100 |      100 |     100 |     100 |                   
+-------------------|---------|----------|---------|---------|-------------------
+
+Test Suites: 8 passed, 8 total
+Tests:       43 passed, 43 total
+Snapshots:   0 total
+Time:        3.226 s, estimated 7 s
+Ran all test suites.

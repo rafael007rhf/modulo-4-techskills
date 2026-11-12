@@ -1,0 +1,12 @@
+Data UTC: 2026-11-12T21:18:12.682Z
+Node: v24.20.0
+Comando equivalente: npx jest --runInBand --runTestsByPath src/__tests__/divide.spec.ts src/__tests__/formatador.spec.ts
+Código de saída: 0
+Esperado: 0
+
+
+Test Suites: 2 passed, 2 total
+Tests:       13 passed, 13 total
+Snapshots:   0 total
+Time:        1.511 s, estimated 2 s
+Ran all test suites within paths "src/__tests__/divide.spec.ts", "src/__tests__/formatador.spec.ts".

@@ -1,0 +1,11 @@
+
+> modulo-4-techskills@1.0.0 test:random
+> jest --runInBand --randomize --showSeed --seed=1713
+
+
+Seed:        1713
+Test Suites: 17 passed, 17 total
+Tests:       99 passed, 99 total
+Snapshots:   1 passed, 1 total
+Time:        2.303 s, estimated 4 s
+Ran all test suites.

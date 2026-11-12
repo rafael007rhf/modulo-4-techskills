@@ -1,0 +1,11 @@
+Data UTC: 2026-11-12T21:20:18.042Z
+Node: v24.20.0
+Comando equivalente: npx jest --runInBand --runTestsByPath src/__tests__/api.spec.ts
+Código de saída: 0
+Esperado: 0
+
+Test Suites: 1 passed, 1 total
+Tests:       17 passed, 17 total
+Snapshots:   0 total
+Time:        1.904 s
+Ran all test suites within paths "src/__tests__/api.spec.ts".

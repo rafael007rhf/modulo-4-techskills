@@ -1,0 +1,10 @@
+
+> modulo-4-techskills@1.0.0 test
+> jest --runInBand
+
+
+Test Suites: 17 passed, 17 total
+Tests:       99 passed, 99 total
+Snapshots:   1 passed, 1 total
+Time:        7.45 s
+Ran all test suites.

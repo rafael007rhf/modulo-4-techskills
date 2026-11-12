@@ -1,0 +1,16 @@
+Registro copiado das saídas reais do terminal PTY em 12/11/2026.
+Comando: npx jest --watchAll --runInBand divide
+Encerramento interativo: tecla q; código de saída confirmado: 0.
+O observador fez duas rodadas antes de encerrar.
+
+Test Suites: 1 passed, 1 total
+Tests:       9 passed, 9 total
+Snapshots:   0 total
+Time:        1.296 s, estimated 2 s
+Ran all test suites matching divide.
+
+Test Suites: 1 passed, 1 total
+Tests:       9 passed, 9 total
+Snapshots:   0 total
+Time:        0.078 s, estimated 2 s
+Ran all test suites matching divide.
